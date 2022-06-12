@@ -1,0 +1,38 @@
+body {
+    margin: 10px;
+}
+
+label {
+    min-width: 70px;
+}
+
+select {
+    min-width: 200px;
+    margin: 5px;
+}
+
+input {
+    min-width: 70px;
+    margin: 5px;
+}
+.btnNoBorder {
+    border: none !important;
+}
+
+
+
+#filterDiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px dotted black;
+    padding:5px;
+}
+
+#basket {
+    background: lightgray;
+}
+
+.amount {
+    width: 30px;
+    text-align: right;
+}

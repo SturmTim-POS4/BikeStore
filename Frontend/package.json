@@ -1,0 +1,33 @@
+{
+  "name": "my-awsome-project",
+  "version": "1.0.0",
+  "description": "Here comes the description",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "swaggergen": "openapi-generator-cli generate --generator-key jQuery",
+    "watch:tsc": "tsc --watch",
+    "watch:app": "live-server",
+    "bundle": "browserify dist/index.js -o dist/app.js",
+    "watch:bundle": "watchify dist/index.js -o dist/app.js",
+    "watch:all": "concurrently npm:watch:tsc npm:watch:app npm:watch:bundle"
+  },
+  "author": "YourName",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.1",
+    "@types/jquery": "^3.5.14",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "bootstrap": "^5.1.3",
+    "browserify": "^17.0.0",
+    "concurrently": "^7.2.0",
+    "eslint": "^8.15.0",
+    "live-server": "^1.2.2",
+    "typescript": "^4.6.4",
+    "watchify": "^4.0.0"
+  }
+}

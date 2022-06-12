@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typescript Demo</title>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="dist/app.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+  <img src="/img/logo.png" height="100" style="float:left"><h1>Bike Store <span id="storeName"></span></h1>
+  <p>
+    Status: <span id="lblMsg"></span>
+  </p>
+  <hr>
+  
+  <div id="basket">
+    <h1>Warenkorb</h1>
+    <div id="divBasket">
+      <table class="table" id="tblBasket">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Amount</th>
+            <th scope="col">Productname</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Category</th>
+            <th scope="col">ModelYear</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody id="tblBasketBody">
+        </tbody>
+        </table>
+    </div>
+    <div>Summe:<span id="basketSum">0</span></div>
+    <div><Button id="btnSaveBasket" class="btn btn-primary">Save</Button><Button id="btnClearBasket" class="btn btn-danger">Clear</Button></div>
+  </div>
+  <div id="divStore">
+    <div id="filterDiv">
+    <fieldset>
+    <legend>Filter</legend>
+    <label>Store:</label><select id="stores"></select><br>
+    <label>Category:</label><select id="categories"></select><br>
+    <label>Filter:</label><input type="text" id="txtFilter" value="" />
+    </fieldset>
+  </div>
+    <table class="table" id="tblProducts">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col">Amount</th>
+          <th scope="col">Productname</th>
+          <th scope="col">Brand</th>
+          <th scope="col">Category</th>
+          <th scope="col">ModelYear</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody id="tblProductsBody">
+      </tbody>
+      </table>
+  </p>
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+api/CategoryApi.ts
+api/OrderApi.ts
+api/OrderItemApi.ts
+api/ProductApi.ts
+api/StoreApi.ts
+api/api.ts
+configuration.ts
+git_push.sh
+index.ts
+model/CategoryDto.ts
+model/OrderDto.ts
+model/OrderItemDto.ts
+model/PostOrderDto.ts
+model/ProductDto.ts
+model/StoreDto.ts
+model/models.ts
+variables.ts
